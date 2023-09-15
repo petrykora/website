@@ -1,6 +1,7 @@
 run = "npm run dev"
 onBoot = "npm install && npm install netlify-cli -g"
 language = "javascript"
+entrypoint = "README.md"
 
 [[ports]]
 localPort = 4321
