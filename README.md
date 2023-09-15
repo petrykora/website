@@ -52,6 +52,69 @@ pages/
     └── pierwszy-wpis.md  <-- `blog/pierwszy-wpis/`
 ```
 
+## 📘 Krok po kroku
+
+### ⚒️ Tworzenie strony
+Włącz serwer deweloperski, umożliwiający podgląd strony podczas pisania kodu.
+```shell
+npm run dev
+```
+Po każdorazowym zapisie pliku, strona znajdująca się pod adresem `http://localhost:4321/` zostanie zaktualizowana.
+
+Możesz teraz edytować pliki, eksperymentować i stworzyć jedyną w swoim rodzaju stronę internetową!
+
+### 🌐 Publikacja
+Gdy uznasz, że świat jest już gotowy na twoją piękną stronę, zainstaluj CLI (command line interface) *Netlify*.
+```shell
+npm install netlify-cli -g
+```
+
+Teraz możesz wywołać nowo dodane narzędzie za pomocą polecenia `netlify`.
+Użycie komend `netlify` pozwoli Ci opublikować w prosty sposób swoją stronę. Wcześniej należy być zalogowanym w przeglądarce na konto *Netlify*, aby powiązać nasze konto z narzędziem konsolowym.
+```shell
+netlify deploy
+```
+#### 📡 Powiązanie narzędzia z kontem Netlify
+W przypadku kiedy konto nie zostało jeszcze powiązane w przeglądarce powinno otworzyć się okno:
+
+![Netlify authorize](doc/netlify-authorize.png)
+
+> **Note**
+> Na platformie *Replit* strona **może nie otworzyć się sama**, dlatego należy wtedy wejść w link podany w terminalu.
+
+
+#### 🚀 Wdrażanie (deployment)
+Jeżeli wcześniej strona nie była publikowana, wyświetlony zostanie następujący komunikat.
+```text
+This folder isn't linked to a site yet
+? What would you like to do? 
+  Link this directory to an existing site 
+❯ +  Create & configure a new site
+```
+
+Wybierając drugą opcję, domyślnie zaznaczoną, klawiszem *enter* możemy stworzyć wersję testową, która będzie już publiczna w internecie. Następnie, wybieramy zespół, w którym znajdzie się nasza aplikacja - zwykle będzie to zespół *Personal*. Potem możemy nadać własną nazwę strony, bądź zostawić pole puste aby otrzymać losowo wygenerowaną nazwę. Wchodząc w link *Website draft URL* możemy zobaczyć swoją stronę umieszczoną już na zewnętrznym serwerze.
+
+Jeżeli chcesz, aby twoja strona była zapisana, ponownie wpisz komendę `netlify deploy` tym razem dodając do niej flagę `--prod`, która spowoduje, że strona zostanie przypisana do naszego konta.
+
+```shell
+netlify deploy --prod
+```
+
+Aby zobaczyć naszą stronę na naszym koncie, możemy szybko przejść tam za pomocą komendy
+```shell
+netlify open
+```
+
+Z poziomu panelu *Netlify* możesz zarządać swoimi stronami oraz zmieniać takie parametry jak finalny URL strony!
+
+
+#### CI (continuous integration)
+
+Aby zautomatyzować powyższy proces, należy połączyć repozytorium *GitHub* z projektem *Netlify*. Dzięki temu *Netlify* zrobi za Ciebie robotę za każdym razem kiedy wyślesz zmiany do podłączonego repozytorium.
+*deploymentu*. 
+
+Możesz się teraz cieszyć automatycznie aktualizującą się stroną internetowej, na której możesz umieścić co chcesz!
+
 ## 🧞 Komendy
 
 Możesz wywołać wszystkie komendy w konsoli znajdując się w głównej ścieżce projektu:
