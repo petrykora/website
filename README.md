@@ -54,7 +54,7 @@ pages/
 
 ## 🧞 Komendy
 
-Możesz wywołać wszystkie komendy w konsoli znajdując się w głównej ścierzce projektu:
+Możesz wywołać wszystkie komendy w konsoli znajdując się w głównej ścieżce projektu:
 
 | Command                   | Action                                                                   |
 | :------------------------ | :----------------------------------------------------------------------- |
