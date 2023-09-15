@@ -4,23 +4,27 @@ Kliknij w guzik poniżej, aby zaimportować szalon do *Replit.com*
 
 [![Run on Repl.it](https://replit.com/badge/github/ALOPB-Hack-Club/astro-website-template)](https://replit.com/new/github/ALOPB-Hack-Club/astro-website-template)
 
-
 ## 🚀 Struktura projektu
 
 Szablon składa się z kilku ważnych katalogów, w których umieszczamy pliki.
 
 ```text
 /
-├── public/
-│   └── favicon.svg
 ├── src/
-│   ├── components/
-│   │   └── Card.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
-│       └── index.astro
-└── package.json
+│       └── index.md
+└── .gitignore
+```
+
+Plik `index.md` jest naszą stroną, napisaną w markdownie.
+
+`Layout.astro` jest natomiast otoczką na stronę. Można ją podpiąć do strony w markdownie poprzez dodanie nastepującego fragmentu kodu na początku pliku `.md`:
+```
+---
+layout: '../layouts/Layout.astro'
+---
 ```
 
 Dotatkowo jest kilka katalogów, w których nie umieszczamy kodu.
@@ -29,8 +33,17 @@ Są to:
 - `node_modules` - pobrane moduły (zależności) projektu
 - `dist` - pliki zbudowanej strony, które finalnie umieścimy na serwerze
 
-Astro zwraca uwagę na pliki `.astro` oraz `.md` znajdujące się w katalogu `src/pages/`. Każda strona powinna mieć unikatową nazwę.
-Aby zagnieździć (znestować) ścierzkę naszej strony np. `blog/pierwszy-wpis` należy utworzyć katalog. Dodatkowo tworząc plik `index.md` bądź `index.astro` możemy zdefiniować co znajdzie się na samej ścierzce `/blog/`.
+Wszystkie statyczne zasoby takie jak obrazy czy zdjęcia powinny znaleść się w katalogu `public/`.
+
+Oprócz tego znaczącym plikiem jest `.gitignore` - pliki o nazwach podanych w tym pliku nie podlegają wersjonowaniu.
+
+I wreszcie `netlify.toml` oraz `.replit`, czyli pliki zawierające odpowienio ustawienia stawiania (deploymentu) strony oraz konfigurację projektu na stronie [replit](https://replit.com/~).
+
+Astro zwraca uwagę na pliki `.astro` oraz `.md` znajdujące się w katalogu `src/pages/`. Każda strona w tym samym katalogu powinna mieć unikatową nazwę.
+
+## 🏗️ Rozbudowane ścieżki stron
+
+Aby zagnieździć (znestować) ścieżkę naszej strony np. `blog/pierwszy-wpis` należy utworzyć katalog. Dodatkowo tworząc plik `index.md` bądź `index.astro` możemy zdefiniować co znajdzie się na samej ścieżce `/blog/`.
 ```text
 pages/
 ├── index.astro
@@ -38,8 +51,6 @@ pages/
     ├── index.md          <-- `blog/`    
     └── pierwszy-wpis.md  <-- `blog/pierwszy-wpis/`
 ```
-
-Wszystkie statyczne zasoby takie jak obrazy czy zdjęcia powinny znaleść się w katalogu `public/`.
 
 ## 🧞 Komendy
 
@@ -56,4 +67,4 @@ Możesz wywołać wszystkie komendy w konsoli znajdując się w głównej ścier
 
 ## 👀 Dokumentacja
 
-[Oficjalna dokumntacja Astro ➚](https://docs.astro.build)
+[Oficjalna dokumentacja Astro ➚](https://docs.astro.build)
