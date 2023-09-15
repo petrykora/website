@@ -1,0 +1,11 @@
+run = "npm run dev"
+onBoot = "npm install && npm install netlify-cli -g"
+language = "javascript"
+
+[[ports]]
+localPort = 4321
+externalPort = 8099
+
+[deployment]
+deploy = "netlify deploy"
+build = "npm run build"
