@@ -1,8 +1,12 @@
 # Astro website template
 
-Kliknij w guzik poniżej, aby zaimportować szalon do *Replit.com*
+Zaimportuj szalon do *Replit.com* ⬇
 
 [![Run on Repl.it](https://replit.com/badge/github/ALOPB-Hack-Club/astro-website-template)](https://replit.com/new/github/ALOPB-Hack-Club/astro-website-template)
+
+Stwórz nowe repozytorium *GitHub* z CI i prjektem *Netlify* ⬇
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/alopb-hack-club/astro-website-template)
 
 ## 🚀 Struktura projektu
 
@@ -112,6 +116,8 @@ Z poziomu panelu *Netlify* możesz zarządać swoimi stronami oraz zmieniać tak
 
 Aby zautomatyzować powyższy proces, należy połączyć repozytorium *GitHub* z projektem *Netlify*. Dzięki temu *Netlify* zrobi za Ciebie robotę za każdym razem kiedy wyślesz zmiany do podłączonego repozytorium.
 *deploymentu*. 
+
+![Countinuous integration schema](doc/continuous-integration-schema.png)
 
 Możesz się teraz cieszyć automatycznie aktualizującą się stroną internetowej, na której możesz umieścić co chcesz!
 
