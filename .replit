@@ -1,4 +1,4 @@
-run = "npm run dev --host"
+run = "npm run dev -- --host"
 entrypoint = "index.js"
 onBoot = "npm install && npm install netlify-cli -g"
 
