@@ -1,6 +1,6 @@
 run = "npm run dev -- --host"
 entrypoint = "index.js"
-onBoot = "npm install && npm install netlify-cli -g"
+onBoot = "npm install && npm install netlify-cli"
 
 [env]
 XDG_CONFIG_HOME = "/home/runner/.config"
