@@ -4,10 +4,6 @@ Zaimportuj szalon do *Replit.com* ⬇
 
 [![Run on Repl.it](https://replit.com/badge/github/ALOPB-Hack-Club/astro-website-template)](https://replit.com/new/github/ALOPB-Hack-Club/astro-website-template)
 
-Stwórz nowe repozytorium *GitHub* z CI i prjektem *Netlify* ⬇
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/alopb-hack-club/astro-website-template)
-
 ## 🚀 Struktura projektu
 
 Szablon składa się z kilku ważnych katalogów, w których umieszczamy pliki.
