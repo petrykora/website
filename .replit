@@ -63,3 +63,6 @@ support = true
       sourceMaps = true
       stopOnEntry = false
       type = "pwa-node"
+
+[nix]
+channel = "stable-22_11"
